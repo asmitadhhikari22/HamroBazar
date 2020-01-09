@@ -9,7 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Checkbox2"></activity>
+        <activity android:name=".WelcomeActivity"></activity>
+        <activity android:name=".TrendingAdsAdapter" />
+        <activity android:name=".SplashScreen" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".ListedAdsAdapter" />
+        <activity android:name=".ListedAds" />
+        <activity android:name=".DashboardActivity" />
+        <activity android:name=".Checkbox2" />
         <activity android:name=".Checkbox1" />
         <activity android:name=".MainActivity">
             <intent-filter>
