@@ -7,23 +7,24 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class Checkbox1 extends AppCompatActivity {
+public class Checkbox3 extends AppCompatActivity {
 
-    Button back;
+    Button btnback;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_checkbox1);
+        setContentView(R.layout.activity_checkbox3);
 
-        back=findViewById(R.id.back);
-        back.setOnClickListener(new View.OnClickListener() {
+        btnback=findViewById(R.id.btnback);
+        btnback.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent =new Intent(Checkbox1.this,WelcomeActivity.class);
+                Intent intent =new Intent(Checkbox3.this,WelcomeActivity.class);
                 startActivity(intent);
             }
         });
+
     }
 }
