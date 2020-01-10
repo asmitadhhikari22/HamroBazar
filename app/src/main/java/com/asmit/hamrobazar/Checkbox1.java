@@ -24,6 +24,6 @@ public class Checkbox1 extends AppCompatActivity {
                 Intent intent =new Intent(Checkbox1.this,WelcomeActivity.class);
                 startActivity(intent);
             }
-        });
+        });//
     }
 }
