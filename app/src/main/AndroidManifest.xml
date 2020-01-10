@@ -15,10 +15,22 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
+        <activity android:name=".LoginActivity"></activity>
+        <activity android:name=".RegisterActivity"> </activity>
+        <activity android:name=".DashboardActivity" />
         <activity android:name=".Checkbox3" />
-        <activity android:name=".LoginActivity" />
         <activity android:name=".Checkbox2" />
         <activity android:name=".Checkbox1" />
+        <activity android:name=".WelcomeActivity">
+
+        </activity>
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".MainActivity" />
     </application>
 

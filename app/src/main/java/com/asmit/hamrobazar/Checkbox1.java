@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class Checkbox1 extends AppCompatActivity {
 
-    Button back;
+    Button backto;
 
 
     @Override
@@ -17,8 +17,8 @@ public class Checkbox1 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_checkbox1);
 
-        back=findViewById(R.id.back);
-        back.setOnClickListener(new View.OnClickListener() {
+        backto=findViewById(R.id.Backto);
+        backto.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent =new Intent(Checkbox1.this,WelcomeActivity.class);

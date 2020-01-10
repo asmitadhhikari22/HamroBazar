@@ -38,10 +38,10 @@ public class DashboardActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-         super.onCreateOptionsMenu(menu);
+        super.onCreateOptionsMenu(menu);
         MenuInflater menuInflater=getMenuInflater();
-  menuInflater.inflate(R.menu.menu,menu);
-         return true;
+        menuInflater.inflate(R.menu.menu,menu);
+        return true;
     }
 
 
@@ -60,7 +60,7 @@ public class DashboardActivity extends AppCompatActivity {
         myDialog= new Dialog(this);
 
 
-       final Toolbar toolbar=findViewById(R.id.toolbar);
+        final Toolbar toolbar=findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
         imgProfileImg=findViewById(R.id.imgProfileImg);
