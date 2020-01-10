@@ -1,9 +1,5 @@
 package com.asmit.hamrobazar;
 
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.loader.content.CursorLoader;
-
 import android.content.Intent;
 import android.database.Cursor;
 import android.net.Uri;
@@ -14,10 +10,14 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.loader.content.CursorLoader;
+
 import com.asmit.hamrobazar.api.UsersAPI;
 import com.asmit.hamrobazar.model.User;
 import com.asmit.hamrobazar.serverresponse.ImageResponse;
-import com.asmit.hamrobazar.serverresponse.SignUpresponse;
+import com.asmit.hamrobazar.serverresponse.SignUpResponse;
 import com.asmit.hamrobazar.strictmode.StrictModeClass;
 import com.asmit.hamrobazar.url.Url;
 
@@ -34,30 +34,28 @@ import retrofit2.Response;
 
 public class RegisterActivity extends AppCompatActivity {
 
-
-    private EditText etEmail,etFullname,etPw,etRePassword,etPhone,etMobilePhone,etStreetname,etLocation,etAddress3;
+    private EditText etEmail, etFullname, etPw, etRePassword, etPhone, etMobilePhone, etStreetname, etLocation, etAddress3;
     private Button btnRegister;
     private CircleImageView Profile;
     String imagePath;
     private String imageName = "";
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
-        Profile=findViewById(R.id.Profile);
-        etEmail=findViewById(R.id.etEmail);
-        etPw=findViewById(R.id.etPw);
-        etFullname=findViewById(R.id.etFullname);
-        etRePassword=findViewById(R.id.etRePassword);
-        etPhone=findViewById(R.id.etPhone);
-        etMobilePhone=findViewById(R.id.etMobilePhone);
-        etStreetname=findViewById(R.id.etStreetname);
-        etLocation=findViewById(R.id.etLocation);
-        etAddress3=findViewById(R.id.etAddress3);
-        btnRegister=findViewById(R.id.btnRegister);
+        Profile = findViewById(R.id.Profile);
+        etEmail = findViewById(R.id.etEmail);
+        etPw = findViewById(R.id.etPw);
+        etFullname = findViewById(R.id.etFullname);
+        etRePassword = findViewById(R.id.etRePassword);
+        etPhone = findViewById(R.id.etPhone);
+        etMobilePhone = findViewById(R.id.etMobilePhone);
+        etStreetname = findViewById(R.id.etStreetname);
+        etLocation = findViewById(R.id.etLocation);
+        etAddress3 = findViewById(R.id.etAddress3);
+        btnRegister = findViewById(R.id.btnRegister);
 
         Profile.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -154,24 +152,27 @@ public class RegisterActivity extends AppCompatActivity {
         String address3=etAddress3.getText().toString();
 
         User users= new User(email,fullname,password,phone,mobilephone,streetname,location,address3,imageName);
-        UsersAPI usersAPI= Url.getInstance().create(UsersAPI.class);
-        Call<SignUpresponse> signUpCall=usersAPI.registerUser(users);
+        UsersAPI usersAPI=Url.getInstance().create(UsersAPI.class);
+        Call<SignUpResponse> signUpCall=usersAPI.registerUser(users);
 
-        signUpCall.enqueue(new Callback<SignUpresponse>() {
+        signUpCall.enqueue(new Callback<SignUpResponse>() {
             @Override
-            public void onResponse(Call<SignUpresponse> call, Response<SignUpresponse> response) {
+            public void onResponse(Call<SignUpResponse> call, Response<SignUpResponse> response) {
                 if(!response.isSuccessful()){
                     Toast.makeText(RegisterActivity.this, "Code" + response.code(), Toast.LENGTH_SHORT).show();
                     return;
                 }
                 Toast.makeText(RegisterActivity.this, "Register sucessfully", Toast.LENGTH_SHORT).show();
+
             }
 
             @Override
-            public void onFailure(Call<SignUpresponse> call, Throwable t) {
+            public void onFailure(Call<SignUpResponse> call, Throwable t) {
                 Toast.makeText(RegisterActivity.this, "Error" + t.getLocalizedMessage(), Toast.LENGTH_SHORT).show();
 
             }
+
+
         });
     }
 

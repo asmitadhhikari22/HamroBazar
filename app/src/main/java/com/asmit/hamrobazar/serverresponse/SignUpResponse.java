@@ -1,12 +1,7 @@
 package com.asmit.hamrobazar.serverresponse;
 
-public class SignUpresponse {
-
-    private String status;
-    private String token;
-
-
-    public SignUpresponse(String status, String token) {
+public class SignUpResponse {
+    public SignUpResponse(String status, String token) {
         this.status = status;
         this.token = token;
     }
@@ -27,5 +22,6 @@ public class SignUpresponse {
         this.token = token;
     }
 
-
+    private String status;
+    private String token;
 }

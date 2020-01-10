@@ -1,29 +1,21 @@
 package com.asmit.hamrobazar;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.Toast;
 
-import com.asmit.hamrobazar.bll.LoginBLL;
-import com.asmit.hamrobazar.strictmode.StrictModeClass;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class LoginActivity extends AppCompatActivity {
 
-    Button btnSignUp;
+  /*  Button btnSignUp;
     EditText etLEmail,etPassword;
-    Button btnLogin,btnForget;
+    Button btnLogin,btnForget;*/
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        btnSignUp=findViewById(R.id.btnSignUp);
+     /*   btnSignUp=findViewById(R.id.btnSignUp);
         btnForget=findViewById(R.id.btnForget);
         btnLogin=findViewById(R.id.btnLogin);
         etLEmail=findViewById(R.id.etLEmail);
@@ -58,5 +50,6 @@ public class LoginActivity extends AppCompatActivity {
             Toast.makeText(this, "Either email or password is incorrect", Toast.LENGTH_SHORT).show();
             etLEmail.requestFocus();
         }
+    }*/
     }
 }

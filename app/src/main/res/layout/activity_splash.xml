@@ -4,18 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
     android:orientation="vertical"
-    tools:context=".SplashScreen">
-
-
+    android:gravity="center"
+    tools:context=".SplashActivity">
 
     <ImageView
         android:id="@+id/logo"
         android:layout_width="match_parent"
-        android:layout_height="346dp"
+        android:layout_height="356dp"
         android:layout_gravity="center"
-        android:src="@drawable/logo" />
-
+        android:src="@drawable/logo"
+        />
 
 </LinearLayout>

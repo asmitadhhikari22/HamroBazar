@@ -1,27 +1,25 @@
 package com.asmit.hamrobazar;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 
-public class WelcomeActivity extends AppCompatActivity {
+import androidx.appcompat.app.AppCompatActivity;
 
-    CheckBox chk1, chk2, chk3;
-    Button btnagree;
+public class WelcomeActivity extends AppCompatActivity {
+    CheckBox chk1,chk2,chk3;
+    Button btnAgree;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome);
-
         chk1=findViewById(R.id.chk1);
         chk2=findViewById(R.id.chk2);
         chk3=findViewById(R.id.chk3);
-        btnagree=findViewById(R.id.btnagree);
+        btnAgree=findViewById(R.id.btnAgree);
 
         chk1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -44,14 +42,13 @@ public class WelcomeActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        btnagree.setOnClickListener(new View.OnClickListener() {
+        btnAgree.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent =new Intent(WelcomeActivity.this,DashboardActivity.class);
                 startActivity(intent);
             }
         });
-
 
 
     }

@@ -2,10 +2,10 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
-    android:orientation="vertical"
     tools:context=".WelcomeActivity">
 
     <LinearLayout
@@ -16,7 +16,7 @@
         <ImageView
             android:layout_width="150dp"
             android:layout_height="100dp"
-            android:src="@drawable/hamro"
+            android:src="@drawable/hamrobazar"
             android:layout_gravity="left"
             />
         <LinearLayout
@@ -57,6 +57,9 @@
         android:text="Before you can start using our online platform,please read our terms of service and acccept it."
         android:textSize="20sp"
         />
+
+
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -119,7 +122,7 @@
             android:checked="false"/>
     </LinearLayout>
     <Button
-        android:id="@+id/btnagree"
+        android:id="@+id/btnAgree"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginRight="20dp"
@@ -129,7 +132,5 @@
         android:textSize="16sp"
         android:text="I have read and agree to above terms"
         />
-
-
 
 </LinearLayout>

@@ -1,8 +1,7 @@
 package com.asmit.hamrobazar.bll;
 
 import com.asmit.hamrobazar.api.UsersAPI;
-import com.asmit.hamrobazar.serverresponse.SignUpresponse;
-import com.asmit.hamrobazar.url.Url;
+import com.asmit.hamrobazar.serverresponse.SignUpResponse;
 
 import java.io.IOException;
 

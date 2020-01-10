@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".DashboardActivity">
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -15,13 +14,10 @@
             android:layout_width="match_parent"
             android:layout_height="65dp"
             />
-
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
-
 
             <ViewFlipper
                 android:layout_width="match_parent"
@@ -35,16 +31,6 @@
                     android:gravity="center"
                     android:orientation="vertical">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:id="@+id/textview"
-                        android:layout_marginTop="10dp"
-                        android:text="BG DENTAL CLINIC"
-                        android:textColor="#ffffff"
-                        android:textSize="30sp"
-                        android:textStyle="bold" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -78,21 +64,27 @@
                         android:layout_height="wrap_content"
                         android:drawableLeft="@drawable/ic_create_black_24dp"
                         android:text="Post FREE Ad"
-                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_margin="5dp"
+                        android:textSize="15sp"
                         />
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:drawableLeft="@drawable/ic_stay_primary_portrait_black_24dp"
+                        android:drawableLeft="@drawable/ic_tablet_mac_black_24dp"
                         android:text="Mobile Handset"
-                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_margin="5dp"
+                        android:textSize="15sp"
                         />
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:drawableLeft="@drawable/ic_laptop_black_24dp"
+                        android:layout_margin="5dp"
+                        android:textStyle="bold"
+                        android:drawableLeft="@drawable/ic_laptop_windows_black_24dp"
                         android:text="Laptops/Notebooks"
-                        android:textSize="20sp"
+                        android:textSize="15sp"
                         />
 
                 </LinearLayout>
@@ -145,7 +137,7 @@
                     android:layout_height="wrap_content"
                     android:textSize="15sp"
                     android:textStyle="bold"
-                    android:text="Popular Trending Ads"
+                    android:text="Popular Listed Ads"
                     />
                 <Button
                     android:layout_margin="10dp"

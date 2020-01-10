@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Checkbox2">
 
+    tools:context=".Checkbox2">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -122,15 +122,14 @@ You further understand that Hamrobazar is not involved in transaction of any goo
 If you are using information from Site, in order to communicate / sale / purchase any goods or services from other users, we strongly encourage you take necessary precaution to protect yourself. We recommend that you read our Safety Tips before doing any transaction with other users."
             />
         <Button
+            android:id="@+id/back"
             android:layout_width="200dp"
             android:layout_gravity="center"
             android:layout_height="wrap_content"
             android:background="#32baba"
             android:text="Go back"
-            android:id="@+id/btnBack"
             android:layout_margin="40dp"
             />
     </LinearLayout>
-
 
 </ScrollView>

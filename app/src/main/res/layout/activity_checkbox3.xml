@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Checkbox3">
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -117,15 +116,14 @@ If you are using information from Site, in order to communicate / sale / purchas
             />
 
         <Button
+            android:id="@+id/Back"
             android:layout_width="200dp"
             android:layout_gravity="center"
             android:layout_height="wrap_content"
             android:background="#32baba"
             android:text="Go back"
-            android:id="@+id/btnback"
             android:layout_margin="40dp"
             />
     </LinearLayout>
-
 
 </ScrollView>

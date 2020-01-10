@@ -1,8 +1,9 @@
 package com.asmit.hamrobazar.api;
 
+import com.asmit.hamrobazar.ListedAds;
 import com.asmit.hamrobazar.model.User;
 import com.asmit.hamrobazar.serverresponse.ImageResponse;
-import com.asmit.hamrobazar.serverresponse.SignUpresponse;
+import com.asmit.hamrobazar.serverresponse.SignUpResponse;
 
 import java.util.List;
 

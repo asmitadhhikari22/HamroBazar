@@ -3,102 +3,89 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:background="#FFFFFF"
+    android:layout_height="match_parent"
     tools:context=".LoginActivity">
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:hint="Enter Email Address"
+        android:backgroundTint="#32baba"
+        android:focusableInTouchMode="true"
+        android:drawableLeft="@drawable/ic_email_black_24dp"
+        android:drawablePadding="10dp"
+        android:layout_margin="20dp"
+
+        />
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:focusableInTouchMode="true"
+        android:hint="Enter Password"
+        android:backgroundTint="#32baba"
+        android:drawableLeft="@drawable/ic_lock_black_24dp"
+        android:drawablePadding="10dp"
+        android:layout_margin="20dp"
+
+        />
+
+    <Button
+
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:text="Login to My account"
+        android:background="@drawable/shape_login"
+        android:layout_margin="20dp"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@android:color/black" />
+    <Button
+        android:id="@+id/btnForget"
+        android:layout_width="200dp"
+        android:layout_gravity="right"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:text="Forget Password"
+        android:background="#8a0303"
+        android:layout_margin="20dp"
+        />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical" >
-
-        <EditText
-            android:id="@+id/etLEmail"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:hint="Enter Email Address"
-            android:backgroundTint="#32baba"
-            android:focusableInTouchMode="true"
-            android:drawableLeft="@drawable/ic_email_black_24dp"
-            android:drawablePadding="10dp"
-            android:layout_margin="20dp"
-
-            />
-        <EditText
-            android:id="@+id/etPassword"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:focusableInTouchMode="true"
-            android:hint="Enter Password"
-            android:backgroundTint="#32baba"
-            android:drawableRight="@drawable/ic_remove_red_eye_black_24dp"
-            android:drawableLeft="@drawable/ic_lock_black_24dp"
-            android:drawablePadding="10dp"
-            android:layout_margin="20dp"
-
-            />
-
-        <Button
-
-            android:id="@+id/btnLogin"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textStyle="normal"
-            android:text="Login to My account"
-            android:background="@drawable/shape_login"
-            android:layout_margin="20dp"
-            />
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:background="@android:color/black" />
-        <Button
-            android:id="@+id/btnForget"
-            android:layout_width="200dp"
-            android:layout_gravity="right"
-            android:layout_height="wrap_content"
-            android:textStyle="normal"
-            android:text="Forget Password"
-            android:background="#8a0303"
-            android:layout_margin="20dp"
-            />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        >
+        android:gravity="bottom"
+        android:orientation="horizontal">
 
         <TextView
             android:layout_width="200dp"
             android:layout_height="55dp"
             android:layout_marginLeft="10dp"
-
             android:text="don't have account? create one for FREE"
             android:textColor="#FF9933"
             android:textSize="20sp" />
 
         <Button
             android:id="@+id/btnSignUp"
-            android:layout_width="170dp"
-            android:layout_height="55dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:background="#FFFFFF"
             android:focusableInTouchMode="true"
-            android:text="Register Now"
+            android:text="Forget Password"
             android:gravity="center"
-            android:textAlignment="center"
             android:textColor="#32baba"
             android:textSize="15sp"
             android:textStyle="bold" />
     </LinearLayout>
-
-
-
 </LinearLayout>
