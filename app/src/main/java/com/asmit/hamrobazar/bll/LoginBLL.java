@@ -15,10 +15,10 @@ public class LoginBLL {
 
     public boolean checkUser(String email,String password){
         UsersAPI usersAPI = Url.getInstance().create(UsersAPI.class);
-        Call<SignUpresponse> usersCall = usersAPI.checkUser(email, password);
+        Call<SignUpResponse> usersCall = usersAPI.checkUser(email, password);
 
         try {
-            Response<SignUpresponse> loginResponse = usersCall.execute();
+            Response<SignUpResponse> loginResponse = usersCall.execute();
             if (loginResponse.isSuccessful() &&
                     loginResponse.body().getStatus().equals("Login success!")) {
 
@@ -30,5 +30,4 @@ public class LoginBLL {
         }
         return isSucess;
     }
-
 }
