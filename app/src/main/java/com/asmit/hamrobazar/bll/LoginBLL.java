@@ -2,6 +2,7 @@ package com.asmit.hamrobazar.bll;
 
 import com.asmit.hamrobazar.api.UsersAPI;
 import com.asmit.hamrobazar.serverresponse.SignUpResponse;
+import com.asmit.hamrobazar.url.Url;
 
 import java.io.IOException;
 
