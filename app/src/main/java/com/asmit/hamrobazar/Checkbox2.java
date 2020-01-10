@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class Checkbox2 extends AppCompatActivity {
 
+    //Button
 
     Button back;
 
@@ -17,11 +18,11 @@ public class Checkbox2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_checkbox2);
 
-        back=findViewById(R.id.back);
+        back = findViewById(R.id.back);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent =new Intent(Checkbox2.this,WelcomeActivity.class);
+                Intent intent = new Intent(Checkbox2.this, WelcomeActivity.class);
                 startActivity(intent);
             }
         });
