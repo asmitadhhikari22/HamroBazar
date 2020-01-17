@@ -13,20 +13,21 @@
             android:id="@+id/img"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:src="@drawable/hamro"
+            android:src="@drawable/hamrobazar"
             />
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/imgProfileImg"
             android:layout_width="40dp"
+            android:src="@drawable/noimage"
             android:layout_height="40dp"
-            android:layout_marginLeft="5dp"
+            android:layout_marginLeft="30dp"
             />
         <ImageView
             android:id="@+id/icon"
             android:layout_width="50dp"
             android:layout_height="40dp"
-            android:layout_marginLeft="25dp"
+            android:layout_marginLeft="10dp"
             android:onClick="ShowPopup"
             android:src="@drawable/ic_person_black_24dp"/>
     </androidx.appcompat.widget.Toolbar>
